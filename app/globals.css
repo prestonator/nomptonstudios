@@ -25,5 +25,6 @@ span {
 }
 
 svg {
-  fill: var(--default-text-color);
+	fill: var(--default-text-color);
 }
+
