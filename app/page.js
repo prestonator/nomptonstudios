@@ -23,27 +23,32 @@ export default function Home() {
 			</section>
 			<section className="pt-10">
 				<h3 className="text-4xl">What We Do</h3>
-				<div className="flex flex-col">
+				<div className="flex flex-col max-w-5xl gap-10 mx-auto">
+					<hr />
 					<div className="flex">
-						<MdWeb />
-						<p>Website Design</p>
-						<BsArrowUpRight />
+						<MdWeb className="basis-1/5" />
+						<p className="basis-1/2">Website Design</p>
+						<BsArrowUpRight className="basis-1/5" />
 					</div>
+					<hr />
 					<div className="flex">
-						<MdScreenSearchDesktop />
-						<p>Website Development</p>
-						<BsArrowUpRight />
+						<MdScreenSearchDesktop className="basis-1/5" />
+						<p className="basis-1/2">Website Development</p>
+						<BsArrowUpRight className="basis-1/5" />
 					</div>
+					<hr />
 					<div className="flex">
-						<PiCodeBlock />
-						<p>SEO Marketing</p>
-						<BsArrowUpRight />
+						<PiCodeBlock className="basis-1/5" />
+						<p className="basis-1/2">SEO Marketing</p>
+						<BsArrowUpRight className="basis-1/5" />
 					</div>
+					<hr />
 					<div className="flex">
-						<TfiAnnouncement />
-						<p>Traditional Marketing</p>
-						<BsArrowUpRight />
+						<TfiAnnouncement className="basis-1/5" />
+						<p className="basis-1/2">Traditional Marketing</p>
+						<BsArrowUpRight className="basis-1/5" />
 					</div>
+					<hr />
 				</div>
 			</section>
 			<section>
@@ -97,15 +102,22 @@ export default function Home() {
 			</section>
 			<section>
 				<h4 className="pb-4 text-3xl font-thin">Who We Are</h4>
-				<div>
+				<div className="flex justify-center gap-64">
 					<div>
 						<div
 							style={{
-								backgroundImage: `url(${prestonBG.src})`,
+								backgroundImage: `url(${daltonBG.src})`,
 								backgroundSize: "cover",
+								backgroundColor: "rgba(250, 0, 255, 0.25)",
+								backgroundBlendMode: "multiply",
 							}}
+							className="relative overflow-hidden rounded-full w-96 h-96"
 						>
-							<Image src={prestonHeadshot} alt="Preston Headshot" />
+							<Image
+								className="absolute"
+								src={prestonHeadshot}
+								alt="Preston Headshot"
+							/>
 						</div>
 						<div>
 							<span>Preston Jenkins</span>
@@ -117,9 +129,16 @@ export default function Home() {
 							style={{
 								backgroundImage: `url(${daltonBG.src})`,
 								backgroundSize: "cover",
+								backgroundColor: "rgba(250, 0, 255, 0.25)",
+								backgroundBlendMode: "multiply",
 							}}
+							className="relative overflow-hidden rounded-full h-96 w-96"
 						>
-							<Image src={daltonHeadshot} alt="Preston Headshot" />
+							<Image
+								className="absolute"
+								src={daltonHeadshot}
+								alt="Preston Headshot"
+							/>
 						</div>
 						<div>
 							<span>Dalton Krueger</span>

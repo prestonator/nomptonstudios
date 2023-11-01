@@ -4,7 +4,7 @@
 
 :root {
 	--background: #1e1e1e;
-	--accent-color-one: #fa00ff;
+	--accent-color-one: rgb(251, 0, 255%, 50%);
 	--accent-color-two: #38b1d8;
 	--default-text-color: #fff;
 }
