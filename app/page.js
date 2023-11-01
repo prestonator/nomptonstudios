@@ -5,6 +5,8 @@ import { TfiAnnouncement } from "react-icons/tfi";
 import Image from "next/image";
 import prestonHeadshot from "@/public/prestonHeadshot.webp";
 import daltonHeadshot from "@/public/daltonHeadshot.webp";
+import daltonBG from "@/public/daltonBG.webp";
+import prestonBG from "@/public/prestonBG.webp";
 
 export default function Home() {
 	return (
@@ -97,7 +99,12 @@ export default function Home() {
 				<h4 className="pb-4 text-3xl font-thin">Who We Are</h4>
 				<div>
 					<div>
-						<div>
+						<div
+							style={{
+								backgroundImage: `url(${prestonBG.src})`,
+								backgroundSize: "cover",
+							}}
+						>
 							<Image src={prestonHeadshot} alt="Preston Headshot" />
 						</div>
 						<div>
@@ -106,7 +113,12 @@ export default function Home() {
 						</div>
 					</div>
 					<div>
-						<div>
+						<div
+							style={{
+								backgroundImage: `url(${daltonBG.src})`,
+								backgroundSize: "cover",
+							}}
+						>
 							<Image src={daltonHeadshot} alt="Preston Headshot" />
 						</div>
 						<div>
