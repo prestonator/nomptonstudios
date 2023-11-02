@@ -25,28 +25,28 @@ export default function Home() {
 				<h3 className="text-4xl">What We Do</h3>
 				<div className="flex flex-col max-w-5xl gap-10 mx-auto">
 					<hr />
-					<div className="flex">
-						<MdWeb className="basis-1/5" />
-						<p className="basis-1/2">Website Design</p>
-						<BsArrowUpRight className="basis-1/5" />
+					<div className="grid grid-cols-3 px-32 text-3xl">
+						<MdWeb className="justify-self-start" />
+						<p className="justify-self-start w-max">Website Design</p>
+						<BsArrowUpRight className="justify-self-end" />
 					</div>
 					<hr />
-					<div className="flex">
-						<MdScreenSearchDesktop className="basis-1/5" />
-						<p className="basis-1/2">Website Development</p>
-						<BsArrowUpRight className="basis-1/5" />
+					<div className="grid grid-cols-3 px-32 text-3xl">
+						<MdScreenSearchDesktop className="justify-self-start" />
+						<p className="justify-self-start w-max">Website Development</p>
+						<BsArrowUpRight className="justify-self-end" />
 					</div>
 					<hr />
-					<div className="flex">
-						<PiCodeBlock className="basis-1/5" />
-						<p className="basis-1/2">SEO Marketing</p>
-						<BsArrowUpRight className="basis-1/5" />
+					<div className="grid grid-cols-3 px-32 text-3xl">
+						<PiCodeBlock className="justify-self-start" />
+						<p className="justify-self-start w-max">SEO Marketing</p>
+						<BsArrowUpRight className="justify-self-end" />
 					</div>
 					<hr />
-					<div className="flex">
-						<TfiAnnouncement className="basis-1/5" />
-						<p className="basis-1/2">Traditional Marketing</p>
-						<BsArrowUpRight className="basis-1/5" />
+					<div className="grid grid-cols-3 px-32 text-3xl">
+						<TfiAnnouncement className="justify-self-start" />
+						<p className="justify-self-start w-max">Traditional Marketing</p>
+						<BsArrowUpRight className="justify-self-end" />
 					</div>
 					<hr />
 				</div>
