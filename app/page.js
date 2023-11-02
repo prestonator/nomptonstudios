@@ -23,7 +23,7 @@ export default function Home() {
 			</section>
 			<section className="pt-10">
 				<h3 className="text-4xl">What We Do</h3>
-				<div className="flex flex-col max-w-5xl gap-10 mx-auto">
+				<div className="flex flex-col w-10/12 gap-10 mx-auto">
 					<hr />
 					<div className="grid grid-cols-3 px-32 text-3xl">
 						<MdWeb className="justify-self-start" />
