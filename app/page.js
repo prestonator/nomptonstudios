@@ -26,27 +26,27 @@ export default function Home() {
 				<div className="flex flex-col w-10/12 gap-10 mx-auto">
 					<hr />
 					<div className="grid grid-cols-3 px-32 text-3xl">
-						<MdWeb className="justify-self-start" />
-						<p className="justify-self-start w-max">Website Design</p>
-						<BsArrowUpRight className="justify-self-end" />
+						<MdWeb className="w-16 h-auto justify-self-start aspect-square" />
+						<p className="self-center justify-self-start w-max">Website Design</p>
+						<BsArrowUpRight className="w-16 h-auto justify-self-end aspect-square" />
 					</div>
 					<hr />
 					<div className="grid grid-cols-3 px-32 text-3xl">
-						<MdScreenSearchDesktop className="justify-self-start" />
-						<p className="justify-self-start w-max">Website Development</p>
-						<BsArrowUpRight className="justify-self-end" />
+						<MdScreenSearchDesktop className="w-16 h-auto justify-self-start aspect-square" />
+						<p className="self-center justify-self-start w-max">Website Development</p>
+						<BsArrowUpRight className="w-16 h-auto justify-self-end aspect-square" />
 					</div>
 					<hr />
 					<div className="grid grid-cols-3 px-32 text-3xl">
-						<PiCodeBlock className="justify-self-start" />
-						<p className="justify-self-start w-max">SEO Marketing</p>
-						<BsArrowUpRight className="justify-self-end" />
+						<PiCodeBlock className="w-16 h-auto justify-self-start aspect-square" />
+						<p className="self-center justify-self-start w-max">SEO Marketing</p>
+						<BsArrowUpRight className="w-16 h-auto justify-self-end aspect-square" />
 					</div>
 					<hr />
 					<div className="grid grid-cols-3 px-32 text-3xl">
-						<TfiAnnouncement className="justify-self-start" />
-						<p className="justify-self-start w-max">Traditional Marketing</p>
-						<BsArrowUpRight className="justify-self-end" />
+						<TfiAnnouncement className="w-16 h-auto justify-self-start aspect-square" />
+						<p className="self-center justify-self-start w-max">Traditional Marketing</p>
+						<BsArrowUpRight className="w-16 h-auto justify-self-end aspect-square" />
 					</div>
 					<hr />
 				</div>
