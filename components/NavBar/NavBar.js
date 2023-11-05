@@ -9,16 +9,16 @@ const NavBar = () => {
 			</div>
 			<ul className="flex items-center gap-3">
 				<li>
-					<p>Services</p>
+					<p>About Us</p>
 				</li>
 				<li>
-					<p>About</p>
+					<p>Prices</p>
 				</li>
 				<li>
-					<p>Portfolio</p>
+					<p>Blog</p>
 				</li>
-				<li>
-					<p>Get in Touch</p>
+				<li className="bg-white">
+					<p className="text-black">Get in Touch</p>
 				</li>
 			</ul>
 		</div>
