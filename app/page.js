@@ -1,7 +1,4 @@
-import { MdWeb, MdScreenSearchDesktop } from "react-icons/md";
 import { BsArrowUpRight } from "react-icons/bs";
-import { PiCodeBlock } from "react-icons/pi";
-import { TfiAnnouncement } from "react-icons/tfi";
 import Image from "next/image";
 import prestonHeadshot from "@/public/prestonHeadshot.webp";
 import daltonHeadshot from "@/public/daltonHeadshot.webp";
@@ -11,6 +8,7 @@ import designIcon from "@/public/icons/designIcon.webp";
 import seoIcon from "@/public/icons/seoIcon.webp";
 import codeIcon from "@/public/icons/codeIcon.webp";
 import marketingIcon from "@/public/icons/marketingIcon.webp";
+import heroImage from "@/public/heroImage.webp";
 
 const Home = () => {
 	const services = [
@@ -19,15 +17,15 @@ const Home = () => {
 			title: "Website Design",
 		},
 		{
-			icon: MdScreenSearchDesktop,
+			icon: codeIcon,
 			title: "Website Development",
 		},
 		{
-			icon: PiCodeBlock,
+			icon: seoIcon,
 			title: "SEO Marketing",
 		},
 		{
-			icon: TfiAnnouncement,
+			icon: marketingIcon,
 			title: "Traditional Marketing",
 		},
 	];
@@ -72,13 +70,18 @@ export default Home;
 
 const HeroSection = () => (
 	<section>
-		<div className="max-w-md">
-			<h2 className="text-5xl">Modern Digital Solutions</h2>
-			<p>
-				Formed to help businesses expand online reach and strive in this ever
-				changing world. Nompton Studios is based in Norman, OK and highly
-				invests in our clients.
-			</p>
+		<div className="flex flex-row align-middle">
+			<div className="max-w-md">
+				<h2 className="text-5xl">Modern Digital Solutions</h2>
+				<p>
+					Formed to help businesses expand online reach and strive in this ever
+					changing world. Nompton Studios is based in Norman, OK and highly
+					invests in our clients.
+				</p>
+			</div>
+			<div>
+				<Image src={heroImage} alt="hero image" />
+			</div>
 		</div>
 	</section>
 );
@@ -90,7 +93,7 @@ const ServicesSection = ({ services }) => (
 			<hr />
 			<div className="grid grid-cols-3 px-32 text-3xl">
 				<Image
-					src={designIcon}
+					src={services[0].icon}
 					alt="Design Icon"
 					className="w-16 h-auto invert justify-self-start aspect-square"
 				/>
@@ -102,7 +105,7 @@ const ServicesSection = ({ services }) => (
 			<hr />
 			<div className="grid grid-cols-3 px-32 text-3xl">
 				<Image
-					src={codeIcon}
+					src={services[1].icon}
 					alt="Design Icon"
 					className="w-16 h-auto invert justify-self-start aspect-square"
 				/>
@@ -114,7 +117,7 @@ const ServicesSection = ({ services }) => (
 			<hr />
 			<div className="grid grid-cols-3 px-32 text-3xl">
 				<Image
-					src={seoIcon}
+					src={services[2].icon}
 					alt="Design Icon"
 					className="w-16 h-auto invert justify-self-start aspect-square"
 				/>
@@ -126,7 +129,7 @@ const ServicesSection = ({ services }) => (
 			<hr />
 			<div className="grid grid-cols-3 px-32 text-3xl">
 				<Image
-					src={marketingIcon}
+					src={services[3].icon}
 					alt="Design Icon"
 					className="w-16 h-auto invert justify-self-start aspect-square"
 				/>
