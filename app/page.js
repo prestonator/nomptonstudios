@@ -147,9 +147,12 @@ const ServicesSection = ({ services }) => (
 const WhyPartnerSection = ({ reasons }) => (
 	<section className="px-10">
 		<h4 className="pb-4 text-3xl font-thin">Why partner with us?</h4>
-		<div className={styles.container}>
+		<div className={`${styles.container} grid gap-4`}>
 			{reasons.map((reason) => (
-				<div key={reason.title} className={styles.box}>
+				<div
+					key={reason.title}
+					className={`${styles.box} p-8 rounded-2xl border border-white border-solid`}
+				>
 					<h2 className="text-2xl font-bold uppercase">{reason.title}</h2>
 					<p className="mb-5 text-base leading-relaxed">{reason.description}</p>
 				</div>
