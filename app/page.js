@@ -9,6 +9,7 @@ import seoIcon from "@/public/icons/seoIcon.webp";
 import codeIcon from "@/public/icons/codeIcon.webp";
 import marketingIcon from "@/public/icons/marketingIcon.webp";
 import heroImage from "@/public/heroImage.webp";
+import styles from "./Home.module.css";
 
 const Home = () => {
 	const services = [
@@ -144,13 +145,13 @@ const ServicesSection = ({ services }) => (
 );
 
 const WhyPartnerSection = ({ reasons }) => (
-	<section>
+	<section className="px-10">
 		<h4 className="pb-4 text-3xl font-thin">Why partner with us?</h4>
-		<div className="flex flex-row">
+		<div className={styles.container}>
 			{reasons.map((reason) => (
-				<div key={reason.title} className="flex flex-col basis-2/5">
-					<span className="text-2xl font-bold uppercase">{reason.title}</span>
-					<p>{reason.description}</p>
+				<div key={reason.title} className={styles.box}>
+					<h2 className="text-2xl font-bold uppercase">{reason.title}</h2>
+					<p className="mb-5 text-base leading-relaxed">{reason.description}</p>
 				</div>
 			))}
 		</div>
