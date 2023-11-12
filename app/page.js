@@ -10,6 +10,7 @@ import codeIcon from "@/public/icons/codeIcon.webp";
 import marketingIcon from "@/public/icons/marketingIcon.webp";
 import heroImage from "@/public/heroImage.webp";
 import styles from "./Home.module.css";
+import Button from "@/components/Buttons/Button";
 
 const Home = () => {
 	const services = [
@@ -70,15 +71,18 @@ const Home = () => {
 export default Home;
 
 const HeroSection = () => (
-	<section>
+	<section className="p-10">
 		<div className="flex flex-row align-middle">
-			<div className="max-w-md">
+			<div className="flex flex-col max-w-md gap-4">
 				<h2 className="text-5xl">Modern Digital Solutions</h2>
 				<p>
 					Formed to help businesses expand online reach and strive in this ever
 					changing world. Nompton Studios is based in Norman, OK and highly
 					invests in our clients.
 				</p>
+				<div>
+					<Button href="/">Get in Touch</Button>
+				</div>
 			</div>
 			<div>
 				<Image src={heroImage} alt="hero image" />
@@ -89,10 +93,10 @@ const HeroSection = () => (
 
 const ServicesSection = ({ services }) => (
 	<section className="pt-10">
-		<h3 className="text-4xl">What We Do</h3>
+		<h3 className="pb-10 pl-40 text-4xl">What We Do</h3>
 		<div className="flex flex-col w-10/12 gap-10 mx-auto">
 			<hr />
-			<div className="items-center grid grid-cols-3 px-[1vw] 2xl:px-32">
+			<div className="items-center grid grid-cols-3 px-[5vw] 2xl:px-32">
 				<Image
 					src={services[0].icon}
 					alt="Design Icon"
@@ -104,7 +108,7 @@ const ServicesSection = ({ services }) => (
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
 			<hr />
-			<div className="items-center grid grid-cols-3 px-[1vw] 2xl:px-32">
+			<div className="items-center grid grid-cols-3 px-[5vw] 2xl:px-32">
 				<Image
 					src={services[1].icon}
 					alt="Design Icon"
@@ -116,7 +120,7 @@ const ServicesSection = ({ services }) => (
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
 			<hr />
-			<div className="items-center grid grid-cols-3 px-[1vw] 2xl:px-32">
+			<div className="items-center grid grid-cols-3 px-[5vw] 2xl:px-32">
 				<Image
 					src={services[2].icon}
 					alt="Design Icon"
@@ -128,7 +132,7 @@ const ServicesSection = ({ services }) => (
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
 			<hr />
-			<div className="items-center grid grid-cols-3 px-[1vw] 2xl:px-32">
+			<div className="items-center grid grid-cols-3 px-[5vw] 2xl:px-32">
 				<Image
 					src={services[3].icon}
 					alt="Design Icon"

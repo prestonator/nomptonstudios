@@ -17,7 +17,7 @@ const NavBar = () => {
 				<li>
 					<p>Blog</p>
 				</li>
-				<li className="bg-white">
+				<li className="px-5 py-2 bg-white rounded-md">
 					<p className="text-black">Get in Touch</p>
 				</li>
 			</ul>

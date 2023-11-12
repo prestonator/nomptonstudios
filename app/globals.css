@@ -4,8 +4,8 @@
 
 :root {
 	--background: #1e1e1e;
-	--accent-color-one: rgb(251, 0, 255%, 50%);
-	--accent-color-two: #38b1d8;
+	--accent-one: #fa00ff;
+	--accent-two: #38b1d8;
 	--default-text-color: #fff;
 }
 
@@ -29,9 +29,9 @@ svg {
 }
 
 .fluid-text {
-	font-size: calc(100% + 1.5vw);
+	font-size: calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .fluid-icon {
-	width: calc(100% - 17vw);
+	width: calc(35px + (45 - 35) * ((100vw - 300px) / (1600 - 300)));
 }
