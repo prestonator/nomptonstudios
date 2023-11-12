@@ -92,52 +92,52 @@ const ServicesSection = ({ services }) => (
 		<h3 className="text-4xl">What We Do</h3>
 		<div className="flex flex-col w-10/12 gap-10 mx-auto">
 			<hr />
-			<div className="grid grid-cols-3 px-32 text-3xl">
+			<div className="items-center grid grid-cols-3 px-[1vw] 2xl:px-32">
 				<Image
 					src={services[0].icon}
 					alt="Design Icon"
-					className="w-16 h-auto invert justify-self-start aspect-square"
+					className="h-auto fluid-icon invert justify-self-start aspect-square"
 				/>
-				<p className="self-center justify-self-start w-max">
+				<p className="self-center font-thin fluid-text justify-self-start">
 					{services[0].title}
 				</p>
-				<BsArrowUpRight className="w-16 h-auto justify-self-end aspect-square" />
+				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
 			<hr />
-			<div className="grid grid-cols-3 px-32 text-3xl">
+			<div className="items-center grid grid-cols-3 px-[1vw] 2xl:px-32">
 				<Image
 					src={services[1].icon}
 					alt="Design Icon"
-					className="w-16 h-auto invert justify-self-start aspect-square"
+					className="h-auto fluid-icon invert justify-self-start aspect-square"
 				/>
-				<p className="self-center justify-self-start w-max">
+				<p className="self-center font-thin fluid-text justify-self-start">
 					{services[1].title}
 				</p>
-				<BsArrowUpRight className="w-16 h-auto justify-self-end aspect-square" />
+				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
 			<hr />
-			<div className="grid grid-cols-3 px-32 text-3xl">
+			<div className="items-center grid grid-cols-3 px-[1vw] 2xl:px-32">
 				<Image
 					src={services[2].icon}
 					alt="Design Icon"
-					className="w-16 h-auto invert justify-self-start aspect-square"
+					className="h-auto fluid-icon invert justify-self-start aspect-square"
 				/>
-				<p className="self-center justify-self-start w-max">
+				<p className="self-center font-thin fluid-text justify-self-start">
 					{services[2].title}
 				</p>
-				<BsArrowUpRight className="w-16 h-auto justify-self-end aspect-square" />
+				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
 			<hr />
-			<div className="grid grid-cols-3 px-32 text-3xl">
+			<div className="items-center grid grid-cols-3 px-[1vw] 2xl:px-32">
 				<Image
 					src={services[3].icon}
 					alt="Design Icon"
-					className="w-16 h-auto invert justify-self-start aspect-square"
+					className="h-auto fluid-icon invert justify-self-start aspect-square"
 				/>
-				<p className="self-center justify-self-start w-max">
+				<p className="self-center font-thin fluid-text justify-self-start">
 					{services[3].title}
 				</p>
-				<BsArrowUpRight className="w-16 h-auto justify-self-end aspect-square" />
+				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
 			<hr />
 		</div>

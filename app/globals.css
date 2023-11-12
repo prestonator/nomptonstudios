@@ -28,3 +28,10 @@ svg {
 	fill: var(--default-text-color);
 }
 
+.fluid-text {
+	font-size: calc(100% + 1.5vw);
+}
+
+.fluid-icon {
+	width: calc(100% - 17vw);
+}
