@@ -11,6 +11,7 @@ import marketingIcon from "@/public/icons/marketingIcon.webp";
 import heroImage from "@/public/heroImage.webp";
 import styles from "./Home.module.css";
 import Button from "@/components/Buttons/Button";
+import Typing from "@/components/Typing/Typing";
 
 const Home = () => {
 	const services = [
@@ -71,7 +72,7 @@ const Home = () => {
 export default Home;
 
 const HeroSection = () => (
-	<section className="p-10">
+	<section className="pt-20 section-responsive">
 		<div className="flex flex-row align-middle">
 			<div className="flex flex-col max-w-md gap-4">
 				<h2 className="text-5xl">Modern Digital Solutions</h2>
@@ -95,8 +96,7 @@ const ServicesSection = ({ services }) => (
 	<section className="pt-10">
 		<h3 className="pb-10 pl-40 text-4xl">What We Do</h3>
 		<div className="flex flex-col w-10/12 gap-10 mx-auto">
-			<hr />
-			<div className="items-center grid grid-cols-3 px-[5vw] 2xl:px-32">
+			<div className="items-center grid grid-cols-3 px-[2.5vw] 2xl:px-32">
 				<Image
 					src={services[0].icon}
 					alt="Design Icon"
@@ -108,7 +108,7 @@ const ServicesSection = ({ services }) => (
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
 			<hr />
-			<div className="items-center grid grid-cols-3 px-[5vw] 2xl:px-32">
+			<div className="items-center grid grid-cols-3 px-[2.5vw] 2xl:px-32">
 				<Image
 					src={services[1].icon}
 					alt="Design Icon"
@@ -120,7 +120,7 @@ const ServicesSection = ({ services }) => (
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
 			<hr />
-			<div className="items-center grid grid-cols-3 px-[5vw] 2xl:px-32">
+			<div className="items-center grid grid-cols-3 px-[2.5vw] 2xl:px-32">
 				<Image
 					src={services[2].icon}
 					alt="Design Icon"
@@ -132,7 +132,7 @@ const ServicesSection = ({ services }) => (
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
 			<hr />
-			<div className="items-center grid grid-cols-3 px-[5vw] 2xl:px-32">
+			<div className="items-center grid grid-cols-3 px-[2.5vw] 2xl:px-32">
 				<Image
 					src={services[3].icon}
 					alt="Design Icon"
@@ -149,7 +149,7 @@ const ServicesSection = ({ services }) => (
 );
 
 const WhyPartnerSection = ({ reasons }) => (
-	<section className="px-10">
+	<section>
 		<h4 className="pb-4 text-3xl font-thin">Why partner with us?</h4>
 		<div className={`${styles.container} grid gap-4`}>
 			{reasons.map((reason) => (
