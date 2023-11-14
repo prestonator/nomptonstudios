@@ -18,6 +18,11 @@ body {
 	padding-right: calc(8px + 1.5625vw);
 }
 
+.hero-section {
+	padding-top: calc(4rem + 1.5vh);
+	padding-bottom: calc(4rem + 1.5vh);
+}
+
 h1,
 h2,
 h3,

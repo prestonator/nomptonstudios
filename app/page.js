@@ -72,11 +72,15 @@ const Home = () => {
 export default Home;
 
 const HeroSection = () => (
-	<section className="section-responsive">
-		<div>
-			<div>
-				<h2 className="text-5xl">Modern Digital Solutions</h2>
-				<p>
+	<section className="section-responsive hero-section">
+		<div className="flex justify-center">
+			<div className="w-[40vw] flex flex-col gap-3">
+				<h2 className="text-5xl">
+					Modern Digital
+					<br />
+					Solutions
+				</h2>
+				<p className="w-[30vw]">
 					Formed to help businesses expand online reach and strive in this ever
 					changing world. Nompton Studios is based in Norman, OK and highly
 					invests in our clients.
@@ -85,10 +89,12 @@ const HeroSection = () => (
 					<Button href="/">Get in Touch</Button>
 				</div>
 			</div>
-			<div>
+			<div className="w-[40vw] relative">
 				<Image
 					src={heroImage}
 					alt="hero image"
+					fill
+					className="object-cover overflow-visible"
 				/>
 			</div>
 		</div>
