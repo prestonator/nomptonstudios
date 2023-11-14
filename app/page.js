@@ -72,9 +72,9 @@ const Home = () => {
 export default Home;
 
 const HeroSection = () => (
-	<section className="pt-20 section-responsive">
-		<div className="flex flex-row align-middle">
-			<div className="flex flex-col max-w-md gap-4">
+	<section className="section-responsive">
+		<div>
+			<div>
 				<h2 className="text-5xl">Modern Digital Solutions</h2>
 				<p>
 					Formed to help businesses expand online reach and strive in this ever
@@ -86,7 +86,10 @@ const HeroSection = () => (
 				</div>
 			</div>
 			<div>
-				<Image src={heroImage} alt="hero image" />
+				<Image
+					src={heroImage}
+					alt="hero image"
+				/>
 			</div>
 		</div>
 	</section>

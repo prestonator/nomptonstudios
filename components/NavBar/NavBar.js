@@ -4,8 +4,8 @@ import styles from "./NavBar.module.css";
 
 const NavBar = () => {
 	return (
-		<div className="flex justify-between section-responsive">
-			<div className="max-w-xs">
+		<div className={`${styles.navBarWrapper} flex justify-between`}>
+			<div className="w-64 max-w-xs mx-auto">
 				<Image src={logo} alt="logo" />
 			</div>
 			<ul className="flex items-center justify-end w-full gap-3">
