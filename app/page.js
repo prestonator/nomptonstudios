@@ -73,7 +73,7 @@ export default Home;
 
 const HeroSection = () => (
 	<section className="section-responsive hero-section">
-		<div className="flex justify-center">
+		<div className="flex items-center justify-center">
 			<div className="w-[40vw] flex flex-col gap-3">
 				<h2 className="text-5xl">
 					Modern Digital
@@ -89,7 +89,7 @@ const HeroSection = () => (
 					<Button href="/">Get in Touch</Button>
 				</div>
 			</div>
-			<div className="w-[40vw] relative">
+			<div className="w-[35vw] h-[80vh] relative">
 				<Image
 					src={heroImage}
 					alt="hero image"
@@ -104,8 +104,8 @@ const HeroSection = () => (
 const ServicesSection = ({ services }) => (
 	<section className="pt-10">
 		<h3 className="pb-10 pl-40 text-4xl">What We Do</h3>
-		<div className="flex flex-col w-10/12 mx-auto">
-			<div className="border-t items-center grid grid-cols-3 py-6 px-[2.5vw] 2xl:px-32">
+		<div className="flex flex-col w-[90vw] mx-auto">
+			<div className="border-t items-center grid grid-cols-3 py-8 px-[5vw] 2xl:px-32">
 				<Image
 					src={services[0].icon}
 					alt="Design Icon"
@@ -116,7 +116,7 @@ const ServicesSection = ({ services }) => (
 				</p>
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
-			<div className="border-t items-center grid grid-cols-3 py-6 px-[2.5vw] 2xl:px-32">
+			<div className="border-t items-center grid grid-cols-3 py-8 px-[5vw] 2xl:px-32">
 				<Image
 					src={services[1].icon}
 					alt="Design Icon"
@@ -127,7 +127,7 @@ const ServicesSection = ({ services }) => (
 				</p>
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
-			<div className="border-t items-center grid grid-cols-3 py-6 px-[2.5vw] 2xl:px-32">
+			<div className="border-t items-center grid grid-cols-3 py-8 px-[5vw] 2xl:px-32">
 				<Image
 					src={services[2].icon}
 					alt="Design Icon"
@@ -138,7 +138,7 @@ const ServicesSection = ({ services }) => (
 				</p>
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
-			<div className="border-t border-b items-center grid grid-cols-3 py-6 px-[2.5vw] 2xl:px-32">
+			<div className="border-t border-b items-center grid grid-cols-3 py-8 px-[5vw] 2xl:px-32">
 				<Image
 					src={services[3].icon}
 					alt="Design Icon"
@@ -154,8 +154,8 @@ const ServicesSection = ({ services }) => (
 );
 
 const WhyPartnerSection = ({ reasons }) => (
-	<section>
-		<h4 className="pb-4 text-3xl font-thin">Why partner with us?</h4>
+	<section className="pt-10 section-responsive">
+		<h4 className="pb-10 pl-40 text-3xl font-thin">Why partner with us?</h4>
 		<div className={`${styles.container} grid gap-4`}>
 			{reasons.map((reason) => (
 				<div
