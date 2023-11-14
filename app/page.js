@@ -104,8 +104,8 @@ const HeroSection = () => (
 const ServicesSection = ({ services }) => (
 	<section className="pt-10">
 		<h3 className="pb-10 pl-40 text-4xl">What We Do</h3>
-		<div className="flex flex-col w-10/12 gap-10 mx-auto">
-			<div className="items-center grid grid-cols-3 px-[2.5vw] 2xl:px-32">
+		<div className="flex flex-col w-10/12 mx-auto">
+			<div className="border-t items-center grid grid-cols-3 py-6 px-[2.5vw] 2xl:px-32">
 				<Image
 					src={services[0].icon}
 					alt="Design Icon"
@@ -116,8 +116,7 @@ const ServicesSection = ({ services }) => (
 				</p>
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
-			<hr />
-			<div className="items-center grid grid-cols-3 px-[2.5vw] 2xl:px-32">
+			<div className="border-t items-center grid grid-cols-3 py-6 px-[2.5vw] 2xl:px-32">
 				<Image
 					src={services[1].icon}
 					alt="Design Icon"
@@ -128,8 +127,7 @@ const ServicesSection = ({ services }) => (
 				</p>
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
-			<hr />
-			<div className="items-center grid grid-cols-3 px-[2.5vw] 2xl:px-32">
+			<div className="border-t items-center grid grid-cols-3 py-6 px-[2.5vw] 2xl:px-32">
 				<Image
 					src={services[2].icon}
 					alt="Design Icon"
@@ -140,8 +138,7 @@ const ServicesSection = ({ services }) => (
 				</p>
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
-			<hr />
-			<div className="items-center grid grid-cols-3 px-[2.5vw] 2xl:px-32">
+			<div className="border-t border-b items-center grid grid-cols-3 py-6 px-[2.5vw] 2xl:px-32">
 				<Image
 					src={services[3].icon}
 					alt="Design Icon"
@@ -152,7 +149,6 @@ const ServicesSection = ({ services }) => (
 				</p>
 				<BsArrowUpRight className="h-auto fluid-icon justify-self-end aspect-square" />
 			</div>
-			<hr />
 		</div>
 	</section>
 );
