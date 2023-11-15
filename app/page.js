@@ -160,10 +160,10 @@ const WhyPartnerSection = ({ reasons }) => (
 			{reasons.map((reason) => (
 				<div
 					key={reason.title}
-					className={`${styles.box} p-8 rounded-2xl border border-white border-solid`}
+					className={`${styles.box} py-[10vh] px-[3vw] rounded-2xl border border-white border-solid`}
 				>
-					<h2 className="text-2xl font-bold uppercase">{reason.title}</h2>
-					<p className="mb-5 text-base leading-relaxed">{reason.description}</p>
+					<h2 className="mb-1 text-2xl font-bold uppercase">{reason.title}</h2>
+					<p className="text-base leading-relaxed">{reason.description}</p>
 				</div>
 			))}
 		</div>
