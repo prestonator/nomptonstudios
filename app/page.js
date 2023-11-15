@@ -33,7 +33,7 @@ const Home = () => {
 		},
 	];
 
-	const reasons = [
+	const firstReasons = [
 		{
 			title: "EFFECTIVE COMMUNICATION",
 			description:
@@ -44,6 +44,9 @@ const Home = () => {
 			description:
 				"We are up-to-date on the latest digital trends and leverage our experience to provide technical excellence. Our expertise delivers results.",
 		},
+	];
+
+	const secondReasons = [
 		{
 			title: "FOCUSED ON RESULTS",
 			description:
@@ -55,11 +58,15 @@ const Home = () => {
 				"Based in Norman, Oklahoma, we understand how to help local businesses thrive. Our team is invested in the community.",
 		},
 	];
+
 	return (
 		<main>
 			<HeroSection />
 			<ServicesSection services={services} />
-			<WhyPartnerSection reasons={reasons} />
+			<WhyPartnerSection
+				firstReasons={firstReasons}
+				secondReasons={secondReasons}
+			/>
 			<RecentProjectsSection />
 			<OurReviewsSection />
 			<WhoWeAreSection />
@@ -153,11 +160,22 @@ const ServicesSection = ({ services }) => (
 	</section>
 );
 
-const WhyPartnerSection = ({ reasons }) => (
+const WhyPartnerSection = ({ firstReasons, secondReasons }) => (
 	<section className="pt-10 section-responsive">
 		<h4 className="pb-10 pl-40 text-3xl font-thin">Why partner with us?</h4>
-		<div className={`${styles.container} grid gap-4`}>
-			{reasons.map((reason) => (
+		<div className={`${styles.container} grid gap-4 mb-4 mx-auto w-[60vw]`}>
+			{firstReasons.map((reason) => (
+				<div
+					key={reason.title}
+					className={`${styles.box} py-[10vh] px-[3vw] rounded-2xl border border-white border-solid`}
+				>
+					<h2 className="mb-1 text-2xl font-bold uppercase">{reason.title}</h2>
+					<p className="text-base leading-relaxed">{reason.description}</p>
+				</div>
+			))}
+		</div>
+		<div className={`${styles.container} grid gap-4 mx-auto w-[60vw]`}>
+			{secondReasons.map((reason) => (
 				<div
 					key={reason.title}
 					className={`${styles.box} py-[10vh] px-[3vw] rounded-2xl border border-white border-solid`}
