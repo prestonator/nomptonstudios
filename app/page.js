@@ -190,24 +190,24 @@ const WhyPartnerSection = ({ firstReasons, secondReasons }) => (
 
 const RecentProjectsSection = () => {
 	return (
-		<section>
-			<h4 className="pb-4 text-3xl font-thin">Recent Projects</h4>
+		<section className="pt-10 section-responsive">
+			<h4 className="pb-10 pl-40 text-3xl font-thin">Recent Projects</h4>
 		</section>
 	);
 };
 
 const OurReviewsSection = () => {
 	return (
-		<section>
-			<h4 className="pb-4 text-3xl font-thin">Our Recent Reviews</h4>
+		<section className="pt-10 section-responsive">
+			<h4 className="pb-10 pl-40 text-3xl font-thin">Our Recent Reviews</h4>
 		</section>
 	);
 };
 
 const WhoWeAreSection = () => {
 	return (
-		<section>
-			<h4 className="pb-4 text-3xl font-thin">Who We Are</h4>
+		<section className="pt-10 section-responsive">
+			<h4 className="pb-10 pl-40 text-3xl font-thin">Who We Are</h4>
 			<div className="flex flex-col justify-center">
 				<div className="flex flex-row justify-center">
 					<div
@@ -258,8 +258,8 @@ const WhoWeAreSection = () => {
 
 const NeedWebRelatedServicesSection = () => {
 	return (
-		<section>
-			<h4 className="pb-4 text-3xl font-thin">
+		<section className="pt-10 section-responsive">
+			<h4 className="pb-10 pl-40 text-3xl font-thin">
 				Need web-related services?
 				<br />
 				See how we can help
