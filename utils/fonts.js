@@ -1,7 +1,7 @@
-import { Noto_Sans_Display } from "next/font/google";
+import { Mulish } from "next/font/google";
 
-export const notoSansDisplay = Noto_Sans_Display({
+export const mulish = Mulish({
 	subsets: ["latin"],
-	variable: "--font-header",
+	variable: "--font-family-base",
 	display: "swap",
 });
