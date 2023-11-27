@@ -11,6 +11,7 @@ import marketingIcon from "@/public/icons/marketingIcon.webp";
 import heroImage from "@/public/heroImage.webp";
 import styles from "./Home.module.css";
 import Button from "@/components/Buttons/Button";
+import ProjectSwiper from "@/components/Swiper/ProjectSwiper";
 import Typing from "@/components/Typing/Typing";
 
 const Home = () => {
@@ -178,6 +179,9 @@ const RecentProjectsSection = () => {
 	return (
 		<section className="pt-10 section-responsive">
 			<h4 className="pb-10 pl-40 text-3xl font-thin">Recent Projects</h4>
+			<div>
+				<ProjectSwiper />
+			</div>
 		</section>
 	);
 };
