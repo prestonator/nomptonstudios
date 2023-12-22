@@ -94,8 +94,11 @@ const WhoWeAreSection = () => {
 					<Image
 						src={daltonHeadshot}
 						alt="Dalton Krueger with his family against a cityscape background"
-						className="mb-6 rounded-lg w-80 aspect-square"
-						style={`background-image: url(${daltonBG}); background-size: cover;`}
+						className="mb-6 rounded-lg w-80 aspect-square" style={{
+							backgroundImage: `url(${daltonBG.src})`,
+							backgroundSize: "cover",
+							zIndex: 999
+						}}
 					/>
 					<h2 className="mb-2 text-2xl font-bold">Dalton Krueger</h2>
 					<p className="mb-4 font-semibold text-pink-500">Owner/Operations</p>
@@ -120,7 +123,11 @@ const WhoWeAreSection = () => {
 						src={prestonHeadshot}
 						alt="Preston Jenkins smiling with a cityscape background"
 						className="mb-6 rounded-lg w-80 aspect-square"
-						style={`background-image: url(${prestonBG}); background-size: cover;`}
+						style={{
+							backgroundImage: `url(${prestonBG.src})`,
+							backgroundSize: "cover",
+							zIndex: 999
+						}}
 					/>
 					<h2 className="mb-2 text-2xl font-bold">Preston Jenkins</h2>
 					<p className="mb-4 font-semibold text-pink-500">Owner/Developer</p>
