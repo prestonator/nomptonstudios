@@ -12,6 +12,8 @@ import heroImage from "@/public/heroImage.webp";
 import styles from "./Home.module.css";
 import Button from "@/components/Buttons/Button";
 import ProjectSwiper from "@/components/Swiper/ProjectSwiper";
+import ssLogo from "@/public/ssLogo.png";
+import robertHeadshot from "@/public/robertHeadshot.png";
 import Typing from "@/components/Typing/Typing";
 
 const Home = () => {
@@ -65,8 +67,6 @@ const Home = () => {
 			<RecentProjectsSection />
 			<OurReviewsSection />
 			<WhoWeAreSection />
-			<NeedWebRelatedServicesSection />
-			<FooterSection />
 		</main>
 	);
 };
@@ -188,57 +188,32 @@ const RecentProjectsSection = () => {
 
 const OurReviewsSection = () => {
 	return (
-		<section className="pt-10 section-responsive">
-			<h4 className="pb-10 pl-40 text-3xl font-thin">Our Recent Reviews</h4>
-		</section>
-	);
-};
-
-const WhoWeAreSection = () => {
-	return (
-		<section className="pt-10 section-responsive">
-			<h4 className="pb-10 pl-40 text-3xl font-thin">Who We Are</h4>
-			<div className="flex flex-col justify-center">
-				<div className="flex flex-row justify-center">
-					<div
-						style={{
-							backgroundImage: `url(${prestonBG.src})`,
-							backgroundSize: "cover",
-							backgroundColor: "rgba(250, 0, 255, 0.25)",
-							backgroundBlendMode: "multiply",
-						}}
-						className="relative overflow-hidden rounded-full w-96 h-96"
-					>
-						<Image
-							className="absolute"
-							src={prestonHeadshot}
-							alt="Preston Headshot"
-						/>
+		<section className="max-w-6xl px-4 py-12 mx-auto text-white sm:px-6 lg:px-8">
+			<h2 className="mb-12 text-3xl font-bold text-center">OUR RECENT REVIEWS</h2>
+			<div className="flex items-center justify-center">
+				<div className="p-6 bg-gray-800 rounded-lg shadow-lg">
+					<div className="flex items-center mb-4">
+						<div className="p-2 text-sm font-bold text-gray-300 uppercase rounded-sm">
+							<Image src={ssLogo} alt="Shelter Share logo" className="w-40" />
+						</div>
 					</div>
-					<div>
-						<span>Preston Jenkins</span>
-						<p>Owner & Developer</p>
+					<div className="flex items-center mb-6">
+						<Image src={robertHeadshot}
+							alt="Placeholder image representing the picture of the person who gave the review"
+							className="w-40 max-w-sm mr-4 rounded-full" />
+						<div className="text-lg italic">
+							“Nompton Studios helped me with my business’ website and social media marketing. They
+							exceeded expectations. Would 100% recommend for anyone in the market for web services.”
+						</div>
 					</div>
-				</div>
-				<div className="flex flex-row-reverse justify-center">
-					<div
-						style={{
-							backgroundImage: `url(${daltonBG.src})`,
-							backgroundSize: "cover",
-							backgroundColor: "rgba(250, 0, 255, 0.25)",
-							backgroundBlendMode: "multiply",
-						}}
-						className="relative overflow-hidden rounded-full h-96 w-96"
-					>
-						<Image
-							className="absolute"
-							src={daltonHeadshot}
-							alt="Preston Headshot"
-						/>
+					<div className="text-lg font-bold">
+						Robert Washington,
 					</div>
-					<div>
-						<span>Dalton Krueger</span>
-						<p>Owner & Operations</p>
+					<div className="text-lg">
+						Founder of Shelter Share
+					</div>
+					<div className="flex justify-end mt-4">
+						<i className="text-2xl text-gray-400 fas fa-arrow-right"></i>
 					</div>
 				</div>
 			</div>
@@ -246,22 +221,65 @@ const WhoWeAreSection = () => {
 	);
 };
 
-const NeedWebRelatedServicesSection = () => {
+const WhoWeAreSection = () => {
 	return (
-		<section className="pt-10 section-responsive">
-			<h4 className="pb-10 pl-40 text-3xl font-thin">
-				Need web-related services?
-				<br />
-				See how we can help
-			</h4>
+		<section className="px-4 py-12 sm:px-6 md:px-0 lg:px-8">
+			<h1 className="mb-12 text-4xl font-bold">Who We Are</h1>
+			<div className="flex flex-wrap justify-center gap-8">
+				<div className="flex flex-col items-center w-full p-6 bg-gray-800 rounded-lg md:w-2/5 lg:w-2/5">
+					<Image
+						src={daltonHeadshot}
+						alt="Dalton Krueger with his family against a cityscape background"
+						className="mb-6 rounded-lg w-80 aspect-square"
+						style={`background-image: url(${daltonBG}); background-size: cover;`}
+					/>
+					<h2 className="mb-2 text-2xl font-bold">Dalton Krueger</h2>
+					<p className="mb-4 font-semibold text-pink-500">Owner/Operations</p>
+					<p className="mb-4 text-gray-400">
+						Dalton, a devoted family man, discovered his passion for web design
+						and development while studying business at The University of
+						Oklahoma. He is passionate about serving others any way he can.
+					</p>
+					<p className="mb-4 text-gray-400">
+						Now residing in Norman with his wife and one-year-old daughter, he
+						is driven by a deep love for entrepreneurship and making a community
+						impact.
+					</p>
+					<p className="text-gray-400">
+						With Dalton, you&apos;re not just getting the typical partner for
+						web related services; you&apos;re partnering with a dedicated
+						family-oriented entrepreneur committed to making a difference.
+					</p>
+				</div>
+				<div className="flex flex-col items-center w-full p-6 bg-gray-800 rounded-lg md:w-2/5 lg:w-2/5">
+					<Image
+						src={prestonHeadshot}
+						alt="Preston Jenkins smiling with a cityscape background"
+						className="mb-6 rounded-lg w-80 aspect-square"
+						style={`background-image: url(${prestonBG}); background-size: cover;`}
+					/>
+					<h2 className="mb-2 text-2xl font-bold">Preston Jenkins</h2>
+					<p className="mb-4 font-semibold text-pink-500">Owner/Developer</p>
+					<p className="mb-4 text-gray-400">
+						Preston, a Norman native with a passion for crafting exceptional
+						websites for local businesses. He&apos;s not just a web developer;
+						he&apos;s your neighbor committed to continuous learning and staying
+						on the cutting edge of web trends.
+					</p>
+					<p className="mb-4 text-gray-400">
+						When he&apos;s not building websites, you&apos;ll find Preston on
+						the tennis court or pickleball court, enjoying some friendly
+						competition. He values work-life balance and spends quality time
+						with friends.
+					</p>
+					<p className="text-gray-400">
+						Preston&apos;s unwavering commitment to excellence ensures your
+						projects shine, making him your trusted partner in the digital
+						world.
+					</p>
+				</div>
+			</div>
 		</section>
 	);
 };
 
-const FooterSection = () => {
-	return (
-		<section>
-			<h4>Footer</h4>
-		</section>
-	);
-};
