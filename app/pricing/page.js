@@ -137,37 +137,37 @@ const TechStack = () => {
             <div className="container px-4 py-8 mx-auto">
                 <div className="flex flex-wrap justify-center">
                     <div className="flex flex-col items-center w-1/2 my-4 sm:w-1/3 md:w-1/4 lg:w-40">
-                        <Image alt="React.js logo placeholder" className="mx-auto" src="https://placehold.co/64x64" />
+                        <Image alt="React.js logo placeholder" className="mx-auto" width={64} height={64} src="https://placehold.co/64x64" />
                         <p className="mt-2 text-sm">
                             REACT.JS
                         </p>
                     </div>
                     <div className="flex flex-col items-center w-1/2 my-4 sm:w-1/3 md:w-1/4 lg:w-40">
-                        <Image alt="Vue.js logo placeholder" className="mx-auto" src="https://placehold.co/64x64" />
+                        <Image alt="Vue.js logo placeholder" className="mx-auto" width={64} height={64} src="https://placehold.co/64x64" />
                         <p className="mt-2 text-sm">
                             VUE.JS
                         </p>
                     </div>
                     <div className="flex flex-col items-center w-1/2 my-4 sm:w-1/3 md:w-1/4 lg:w-40">
-                        <Image alt="Gatsby.js logo placeholder" className="mx-auto" src="https://placehold.co/64x64" />
+                        <Image alt="Gatsby.js logo placeholder" className="mx-auto" width={64} height={64} src="https://placehold.co/64x64" />
                         <p className="mt-2 text-sm">
                             GATSBY.JS
                         </p>
                     </div>
                     <div className="flex flex-col items-center w-1/2 my-4 sm:w-1/3 md:w-1/4 lg:w-40">
-                        <Image alt="JavaScript logo placeholder" className="mx-auto" src="https://placehold.co/64x64" />
+                        <Image alt="JavaScript logo placeholder" className="mx-auto" width={64} height={64} src="https://placehold.co/64x64" />
                         <p className="mt-2 text-sm">
                             JAVASCRIPT
                         </p>
                     </div>
                     <div className="flex flex-col items-center w-1/2 my-4 sm:w-1/3 md:w-1/4 lg:w-40">
-                        <Image alt="Next.js logo placeholder" className="mx-auto" src="https://placehold.co/64x64" />
+                        <Image alt="Next.js logo placeholder" className="mx-auto" width={64} height={64} src="https://placehold.co/64x64" />
                         <p className="mt-2 text-sm">
                             NEXT.JS
                         </p>
                     </div>
                     <div className="flex flex-col items-center w-1/2 my-4 sm:w-1/3 md:w-1/4 lg:w-40">
-                        <Image alt="React Native logo placeholder" className="mx-auto" src="https://placehold.co/64x64" />
+                        <Image alt="React Native logo placeholder" className="mx-auto" width={64} height={64} src="https://placehold.co/64x64" />
                         <p className="mt-2 text-sm">
                             REACT NATIVE
                         </p>
@@ -208,7 +208,7 @@ const ReviewSection = () => {
                 </div>
                 <div className="relative flex justify-center md:w-1/2">
                     <div className="flex flex-col items-center justify-start">
-                        <Image alt="Portrait of Mateusz Oleksiuk, CEO of LESS_, a man in a white shirt"
+                        <Image width={400} height={600} alt="Portrait of Mateusz Oleksiuk, CEO of LESS_, a man in a white shirt"
                             className="object-cover w-64 mb-4 h-96" src="https://placehold.co/400x600" />
                         <div className="flex">
                             <span className="inline-block w-10 h-1 mr-2 bg-yellow-400">
@@ -244,22 +244,27 @@ const PartnershipsSection = () => {
 					alt="LESS_ logo placeholder"
 					className="h-12"
 					src="https://placehold.co/200x100"
+                    width={200}
+                    height={100}
 				/>
                 <Image
 					alt="Viu logo placeholder"
 					className="h-12"
 					src="https://placehold.co/200x100"
+                    width={200}
+                    height={100}
 				/>
                 <Image
 					alt="Hoover logo placeholder"
 					className="h-12"
 					src="https://placehold.co/200x100"
+                    width={200}
+                    height={100}
 				/>
 			</div>
 		</section>
 	);
 };
-
 
 const PartnerReasons = () => {
     return (
@@ -312,19 +317,19 @@ const CaseStudies = () => {
             <div className="flex flex-wrap -mx-4">
                 <div className="w-full px-4 mb-10 md:w-1/3">
                     <div className="overflow-hidden bg-white rounded-lg shadow-lg">
-                        <Image alt="Mobile app interface design with colorful elements and user interface components"
+                        <Image width={400} height={600} alt="Mobile app interface design with colorful elements and user interface components"
                             className="w-full" src="https://placehold.co/400x600.png?text=Mobile+App+Interface+Design&amp;fontsize=20" />
                     </div>
                 </div>
                 <div className="w-full px-4 mb-10 md:w-1/3 card-offset" style={{ marginTop: '50px' }}>
                     <div className="overflow-hidden bg-white rounded-lg shadow-lg">
-                        <Image alt="Portrait of a smiling woman with hand on her cheek, white background" className="w-full"
+                        <Image width={400} height={600} alt="Portrait of a smiling woman with hand on her cheek, white background" className="w-full"
                             src="https://placehold.co/400x600.png?text=Portrait+of+a+Woman&amp;fontsize=20" />
                     </div>
                 </div>
                 <div className="w-full px-4 md:w-1/3">
                     <div className="overflow-hidden bg-white rounded-lg shadow-lg">
-                        <Image alt="Product packaging design with pink boxes and modern layout on a vibrant red background"
+                        <Image width={400} height={600} alt="Product packaging design with pink boxes and modern layout on a vibrant red background"
                             className="w-full"
                             src="https://placehold.co/400x600.png?text=Product+Packaging+Design&amp;fontsize=20" />
                     </div>
