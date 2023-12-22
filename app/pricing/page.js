@@ -1,5 +1,4 @@
 import styles from "./Pricing.module.css"
-import Image from "next/image"
 
 const Pricing = () => {
     return (
@@ -9,6 +8,10 @@ const Pricing = () => {
             <CTASection />
             <TechSection />
             <TechStack />
+            <ReviewSection />
+            <PartnershipsSection />
+            <PartnerReasons />
+            <CaseStudies />
         </main>
     )
 }
@@ -169,6 +172,151 @@ const TechStack = () => {
                         </p>
                     </div>
                 </div>
+            </div>
+        </section>
+    )
+}
+
+const ReviewSection = () => {
+    return (
+        <section className="max-w-6xl px-4 py-16 mx-auto">
+            <div className="flex flex-col items-center justify-between md:flex-row md:items-start">
+                <div className="mb-8 md:w-1/2 md:mb-0">
+                    <h2 className="mb-2 text-lg font-light md:mb-4">
+                        WHAT PARTNERS SAY ABOUT US?
+                    </h2>
+                    <div className="flex items-center mb-4">
+                        <span className="inline-block w-10 h-1 mr-2 bg-yellow-400">
+                        </span>
+                        <span className="inline-block w-40 h-1 bg-green-400">
+                        </span>
+                    </div>
+                    <div className="pl-4 mt-4 md:pl-8">
+                        <p className="mb-4 text-lg">
+                            AppTension was flexible and professional. When I needed to quickly add capacity, it took a
+                            week or two at worst - often days. The cooperation enabled me to slowly scale up my own IT
+                            team, and the company was very helpful until the last moments of the transition.
+                        </p>
+                        <p className="font-semibold">
+                            Mateusz Oleksiuk
+                        </p>
+                        <p>
+                            CEO LESS_
+                        </p>
+                    </div>
+                </div>
+                <div className="relative flex justify-center md:w-1/2">
+                    <div className="flex flex-col items-center justify-start">
+                        <img alt="Portrait of Mateusz Oleksiuk, CEO of LESS_, a man in a white shirt"
+                            className="object-cover w-64 mb-4 h-96" src="https://placehold.co/400x600" />
+                        <div className="flex">
+                            <span className="inline-block w-10 h-1 mr-2 bg-yellow-400">
+                            </span>
+                            <span className="inline-block w-40 h-1 bg-green-400">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="flex items-center justify-center mt-8">
+                <button className="mx-4 text-2xl text-white">
+                    <i className="fas fa-chevron-left">
+                    </i>
+                </button>
+                <button className="mx-4 text-2xl text-white">
+                    <i className="fas fa-chevron-right">
+                    </i>
+                </button>
+            </div>
+        </section>
+    )
+}
+
+const PartnershipsSection = () => {
+    return (
+        <section className="container px-4 py-12 mx-auto">
+            <div className="max-w-md mx-auto mb-20 text-sm text-left md:mx-0 md:max-w-full">
+                WE'RE PARTNERING UP WITH LIKE-MINDED FOUNDERS AND BRANDS SINCE 2012
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-8">
+                <img alt="LESS_ logo placeholder" className="h-12" src="https://placehold.co/200x100" />
+                <img alt="Viu logo placeholder" className="h-12" src="https://placehold.co/200x100" />
+                <img alt="Hoover logo placeholder" className="h-12" src="https://placehold.co/200x100" />
+            </div>
+        </section>
+    )
+}
+
+const PartnerReasons = () => {
+    return (
+        <section className="max-w-6xl mx-auto">
+            <h2 className="mb-12 text-3xl font-light text-left">WHY PARTNERS CHOOSE US?</h2>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 md:gap-10">
+                <div className="mb-8 md:mb-0">
+                    <h3 className="mb-2 text-xl font-semibold md:text-2xl heading-height">Pixel-perfect designs</h3>
+                    <p className="font-light">We’re quality-oriented with great attention to detail and design accuracy.</p>
+                </div>
+                <div className="mb-8 md:mb-0">
+                    <h3 className="mb-2 text-xl font-semibold md:text-2xl heading-height">Crystal clear processes</h3>
+                    <p className="font-light">We’re like an open book, not ashamed to show how we’re doing IT.</p>
+                </div>
+                <div className="mb-8 md:mb-0">
+                    <h3 className="mb-2 text-xl font-semibold md:text-2xl heading-height">On-point and fast communication
+                    </h3>
+                    <p className="font-light">Our teams are always in the loop of their projects, ready to keep the fast and
+                        on-point
+                        conversations.</p>
+                </div>
+                <div className="mb-8 md:mb-0">
+                    <h3 className="mb-2 text-xl font-semibold md:text-2xl heading-height">Fully adjusted to operate
+                        internationally</h3>
+                    <p className="font-light">We can easily align communication within different time zones.</p>
+                </div>
+                <div className="mb-8 md:mb-0">
+                    <h3 className="mb-2 text-xl font-semibold md:text-2xl heading-height">Flexible cooperation</h3>
+                    <p className="font-light">We’re adjustable to individual needs. Hitting your budget, deadlines, and
+                        overall business
+                        goals.</p>
+                </div>
+                <div>
+                    <h3 className="mb-2 text-xl font-semibold md:text-2xl heading-height">Dedication to innovation</h3>
+                    <p className="font-light">We make sure no industry update will go unnoticed past our experts, so you get
+                        a
+                        cutting-edge, personalized solution.</p>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+const CaseStudies = () => {
+    return (
+        <section className="container px-6 py-12 mx-auto">
+            <h2 className="mb-12 text-2xl font-semibold text-white">
+                RECENT CASE STUDIES
+            </h2>
+            <div className="flex flex-wrap -mx-4">
+                <div className="w-full px-4 mb-10 md:w-1/3">
+                    <div className="overflow-hidden bg-white rounded-lg shadow-lg">
+                        <img alt="Mobile app interface design with colorful elements and user interface components"
+                            className="w-full" src="https://placehold.co/400x600.png?text=Mobile+App+Interface+Design&amp;fontsize=20" />
+                    </div>
+                </div>
+               <div className="w-full px-4 mb-10 md:w-1/3 card-offset" style={{marginTop: '50px'}}>
+                    <div className="overflow-hidden bg-white rounded-lg shadow-lg">
+                        <img alt="Portrait of a smiling woman with hand on her cheek, white background" className="w-full"
+                            src="https://placehold.co/400x600.png?text=Portrait+of+a+Woman&amp;fontsize=20" />
+                    </div>
+                </div>
+                <div className="w-full px-4 md:w-1/3">
+                    <div className="overflow-hidden bg-white rounded-lg shadow-lg">
+                        <img alt="Product packaging design with pink boxes and modern layout on a vibrant red background"
+                            className="w-full"
+                            src="https://placehold.co/400x600.png?text=Product+Packaging+Design&amp;fontsize=20" />
+                    </div>
+                </div>
+            </div>
+            <div className="my-12 border-b border-gray-700">
             </div>
         </section>
     )
