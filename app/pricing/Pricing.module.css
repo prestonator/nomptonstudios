@@ -1,0 +1,21 @@
+.verticalText {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+}
+
+.gradientText {
+	background: -webkit-linear-gradient(left, #f3ec78, #af4261);
+	background: -o-linear-gradient(right, #f3ec78, #af4261);
+	background: -moz-linear-gradient(right, #f3ec78, #af4261);
+	background: linear-gradient(to right, #f3ec78, #af4261);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline;
+}
+.gradientUnderline {
+	height: 4px;
+	background: linear-gradient(to right, #f3ec78, #af4261);
+	border: none;
+	margin: 0 auto;
+	width: 50%;
+}

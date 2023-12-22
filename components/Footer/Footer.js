@@ -3,20 +3,20 @@ import footerImage from "@/public/footerImage.jpg";
 
 const Footer = async () => {
     return (
-        <footer class="py-12 responsive-padding">
-            <div class="container mx-auto px-4 sm:px-6 py-12">
-                <div class="container mx-auto px-4 py-12">
-                    <div class="flex flex-col lg:flex-row justify-between gap-12">
-                        <div class="lg:w-5/12">
-                            <h1 class="text-5xl font-semibold mb-6">
+        <footer className="py-12 responsive-padding">
+            <div className="container px-4 py-12 mx-auto sm:px-6">
+                <div className="container px-4 py-12 mx-auto">
+                    <div className="flex flex-col justify-between gap-12 lg:flex-row">
+                        <div className="lg:w-5/12">
+                            <h1 className="mb-6 text-5xl font-semibold">
                                 Stay up-to-date with our Weekly Blog
                             </h1>
-                            <form class="flex flex-col w-full mb-4">
-                                <fieldset class="flex flex-row w-full mb-4">
-                                    <input class="flex-grow p-2 text-black rounded-l-lg focus:outline-none" name="email"
+                            <form className="flex flex-col w-full mb-4">
+                                <fieldset className="flex flex-row w-full mb-4">
+                                    <input className="flex-grow p-2 text-black rounded-l-lg focus:outline-none" name="email"
                                         placeholder="Email Address*" required="" type="email" />
                                     <button
-                                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r-lg whitespace-nowrap"
+                                        className="px-4 py-2 font-bold text-white bg-blue-500 rounded-r-lg hover:bg-blue-700 whitespace-nowrap"
                                         type="submit">
                                         Subscribe
                                     </button>
@@ -29,52 +29,52 @@ const Footer = async () => {
                                     </div>
                                 </fieldset>
                             </form>
-                            <p class="text-gray-400 text-sm">
+                            <p className="text-sm text-gray-400">
                                 Your privacy matters! Nompton Studios only uses this info to send content and updates. You
                                 may
                                 unsubscribe anytime. View our privacy policy for more.
                             </p>
                         </div>
-                        <div class="lg:w-6/12">
+                        <div className="lg:w-6/12">
                             <Image alt="A person holding a smartphone with a colorful bokeh effect on the screen"
-                                class="rounded-lg shadow-lg w-full" src={footerImage} />
+                                className="w-full rounded-lg shadow-lg" src={footerImage} />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mx-auto px-16">
-                <div class="flex flex-col items-center">
-                    <div class="self-start">
-                        <h2 class="text-3xl font-semibold text-center">
-                            Get In Touch<i class="pl-4 far fa-envelope"></i>
+            <div className="px-16 mx-auto">
+                <div className="flex flex-col items-center">
+                    <div className="self-start">
+                        <h2 className="text-3xl font-semibold text-center">
+                            Get In Touch<i className="pl-4 far fa-envelope"></i>
                         </h2>
                     </div>
-                    <div class="w-full flex flex-col lg:flex-row justify-between items-center">
-                        <div class="lg:w-1/3 mb-6 lg:mb-0 ">
-                            <div class="flex items-center py-3.5">
-                                <i class="fas fa-envelope text-xl mr-4"></i>
-                                <p class="text-lg">
+                    <div className="flex flex-col items-center justify-between w-full lg:flex-row">
+                        <div className="mb-6 lg:w-1/3 lg:mb-0 ">
+                            <div className="flex items-center py-3.5">
+                                <i className="mr-4 text-xl fas fa-envelope"></i>
+                                <p className="text-lg">
                                     dalton@nomptonstudios.com
                                 </p>
                             </div>
-                            <div class="flex items-center py-3.5">
-                                <i class="fas fa-phone text-xl mr-4"></i>
-                                <p class="text-lg">
+                            <div className="flex items-center py-3.5">
+                                <i className="mr-4 text-xl fas fa-phone"></i>
+                                <p className="text-lg">
                                     (972) 561-7833
                                 </p>
                             </div>
                         </div>
-                        <div class="lg:w-1/3 mb-6 lg:mb-0">
-                            <h2 class="text-3xl font-semibold mb-4 text-center lg:text-left">
+                        <div className="mb-6 lg:w-1/3 lg:mb-0">
+                            <h2 className="mb-4 text-3xl font-semibold text-center lg:text-left">
                                 Norman Location
                             </h2>
-                            <p class="text-lg text-center lg:text-left">
+                            <p className="text-lg text-center lg:text-left">
                                 124 E Main St<br />
                                 Norman, OK 73069<br />
                                 United States
                             </p>
                         </div>
-                        <div class="lg:w-1/3">
+                        <div className="lg:w-1/3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="368" height="183" viewBox="0 0 368 183"
                                 fill="none">
                                 <path
