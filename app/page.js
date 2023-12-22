@@ -13,7 +13,7 @@ import styles from "./Home.module.css";
 import Button from "@/components/Buttons/Button";
 import ProjectSwiper from "@/components/Swiper/ProjectSwiper";
 import ssLogo from "@/public/ssLogo.png";
-import robertHeadshot from "@/public/robertHeadshot.png";
+import robertHeadshot from "@/public/RobertHeadshot.png";
 import Typing from "@/components/Typing/Typing";
 
 const Home = () => {
